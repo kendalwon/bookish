@@ -1,0 +1,30 @@
+#button-container {
+  text-align: center;
+}
+
+#outer-map-box {
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    margin: 10px auto;
+}
+
+.map-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .loader-container {
+    position: absolute;
+    top: 50%;
+    left: 33%;
+  }
+
+.hidden {
+  display: none;
+}
+  
+
+@media only screen and (max-width: 720px) {
+    
+}

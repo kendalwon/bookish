@@ -1,0 +1,119 @@
+.reads-list {
+    width: 75%;
+    margin: auto;
+}
+
+.reads-flex {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0 15px 0;
+    border-top: 2px solid lightgray;
+}
+
+.reads-flex a {
+    text-decoration: none;
+    color: black;
+}
+
+.age-img {
+    width: 350px;
+    border: 1px solid lightgray;
+    margin: 10px 30px 10px 30px; 
+}
+
+.age-label {
+    line-height: 1.5em;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 6px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.age-content {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+    line-height: 1.5em; 
+}
+
+.book-grid {
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-items: center;
+    padding: 20px 0 40px 0;
+}
+
+.book-img {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+.book-descrip {
+    padding-top: 10px;
+    font-size: 16px;  
+}
+
+@media only screen and (max-width: 860px) {
+    .reads-list {
+        width: 80%;
+    }
+    .age-label {
+        font-size: 24px;
+        letter-spacing: 4px;
+    }
+    .age-content {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .book-grid {
+        grid-template-columns: repeat(3, 1fr); 
+        grid-column-gap: 20px;
+    }
+    .reads-list {
+        width: 90%;
+    }
+    .age-img {
+        width: 300px;
+        border: 1px solid lightgray;
+        margin: 10px 30px 10px 30px; 
+    }
+    .age-label {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    .age-content {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+  }
+
+@media only screen and (max-width: 540px) {
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr); 
+        grid-column-gap: 20px;
+    }
+
+    .age-img {
+        width: 250px;
+        border: 1px solid lightgray;
+        margin: 5px 15px 5px 15px; 
+    }
+    .age-label {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+    .age-content {
+        font-size: 14px;
+        letter-spacing: 0px;
+    }
+  }
+
