@@ -1,22 +1,18 @@
-var burgerIcon = document.querySelector(".dropbtn");
-var expandedMenu = document.querySelector(".dropdown-content");
+const burgerIcon = document.querySelector(".dropbtn");
+const expandedMenu = document.querySelector(".dropdown-content");
 
-function openCloseMenu(e) {
+const openCloseMenu = (e) => {
   if (burgerIcon.contains(e.target)) {
     burgerIcon.classList.toggle("change");
     expandedMenu.classList.toggle("show");
     return;
-  }
-  else {
+  } else {
     if (expandedMenu.classList.contains("show")) {
-    burgerIcon.classList.remove("change");
-    expandedMenu.classList.remove("show");
-    return;
-  }
-    else {
+      burgerIcon.classList.remove("change");
+      expandedMenu.classList.remove("show");
       return;
+    } else return;
   }
-}
 }
      
 window.addEventListener("click", openCloseMenu);
