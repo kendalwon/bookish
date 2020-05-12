@@ -146,10 +146,6 @@ define(() => {
       const fullGoogleApiUrl = `${apiUrl}${parameterString}`;
       insertScriptTag(fullGoogleApiUrl);
     },
-
-    // getNearbyBookStores(coords) {
-    //   return fetch()
-    // },
     //get user location
     getUserLocation(options) {
       const highAccuracyTimeout =
@@ -163,7 +159,7 @@ define(() => {
           resolve(position);
         };
 
-        //we will try to get the position from gps otherwise we fallback to the network one
+        //try to get the position from gps otherwise fallback to the network one
         const getLowAccuracyPosition = () => {
           navigator.geolocation.getCurrentPosition(savePosition, reject, {
             enableHighAccuracy: false,
